@@ -1,14 +1,14 @@
-import React, { useCallback } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, {useCallback} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
 import {Input, Row, Col, Image, Button} from 'antd';
 import Link from "next/link";
 
-import { HeaderSection, HeaderWrapper, TopMenu, MainMenu } from './MainPageHeaderCss';
+import {HeaderSection, HeaderWrapper, TopMenu, MainMenu} from './MainPageHeaderCss';
 import UserProfile from "../UserProfile";
 import LoginForm from "../LoginForm";
 
 const MainPageHeader = () => {
-    const { isLoggedIn } = useSelector(state => state.user);
+    const {isLoggedIn} = useSelector(state => state.user);
     return (
         <HeaderSection>
             <HeaderWrapper>
