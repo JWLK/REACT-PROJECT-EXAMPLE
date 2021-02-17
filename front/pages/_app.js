@@ -9,7 +9,7 @@ const NodeBird = ({ Component }) => {
   return (
     <>
       <Head>
-        <title>NodeBird</title>
+        <title>미미벨라 - 미용성형전문인력 구인구직 플랫폼</title>
       </Head>
       <Component />
     </>

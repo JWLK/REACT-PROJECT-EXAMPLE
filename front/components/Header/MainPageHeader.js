@@ -3,7 +3,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {Input, Row, Col, Image, Button} from 'antd';
 import Link from "next/link";
 
-import {HeaderSection, HeaderWrapper, TopMenu, MainMenu} from './MainPageHeaderCss';
+import {HeaderSection, HeaderWrapper, TopMenu, MainMenu} from './MainPageHeaderCSS';
 import UserProfile from "../UserProfile";
 import LoginForm from "../LoginForm";
 

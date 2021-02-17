@@ -22,7 +22,7 @@ const Profile = () => {
   return (
     <AppLayout>
       <Head>
-        <title>내 프로필 | NodeBird</title>
+        <title>내 프로필 | 미미벨라</title>
       </Head>
       <NicknameEditForm />
       <FollowList

@@ -1,15 +1,21 @@
-import styled, {createGlobalStyle} from 'styled-components';
+import styled from 'styled-components';
 import {Card, Button} from 'antd';
-import {CloseOutlined} from '@ant-design/icons';
 
 
 export const ContentsWrapper = styled.div`
+	overflow: hidden;
   height: 180px;
   //background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 `;
 
-export const ContentsCard = styled(Card)`
+export const ContentsImageBanner = styled.img`
+	height: 180px;
+	display: block;
+	margin-left: -20px;
+`
+
+export const ContentsCardStyle00 = styled(Card)`
   width: 100%;
   height: inherit;
 

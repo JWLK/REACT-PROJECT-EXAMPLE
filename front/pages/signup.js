@@ -53,7 +53,7 @@ const Signup = () => {
   return (
     <AppLayout>
       <Head>
-        <title>회원가입 | NodeBird</title>
+        <title>회원가입 | 미미벨라</title>
       </Head>
       <Form onFinish={onSubmit} style={{ padding: 10 }}>
         <div>
