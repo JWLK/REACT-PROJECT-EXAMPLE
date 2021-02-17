@@ -1,18 +1,18 @@
 import styled from 'styled-components';
-import {Card, Button} from 'antd';
+import {Col, Card, Button, List} from 'antd';
 
 
 export const ContentsWrapper = styled.div`
 	overflow: hidden;
-  height: 180px;
+  height: 200px;
   //background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 `;
 
 export const ContentsImageBanner = styled.img`
-	height: 180px;
+	height: 200px;
 	display: block;
-	margin-left: -20px;
+	margin-left: -25px;
 `
 
 export const ContentsCardStyle00 = styled(Card)`
@@ -37,55 +37,40 @@ export const ContentsCardStyle00 = styled(Card)`
       color: rgba(255, 255, 255, 0.8);
     }
 
-    font-size: 12px;
+    font-size: 10px;
     padding: 10px 0;
   }
 
   .ant-card-body {
-    padding: 15px 10px;
+    padding: 5px 10px;
   }
 `;
 
-
-export const HeaderSection = styled.div`
-  background-color: #fff;
-  padding-bottom: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);;
-`;
-
-export const TopMenu = styled(Button)`
-  margin-top: 10px;
-  color: #707070;
-  font-size: 14px;
-  font-weight: Bold;
-
-  :hover {
-    color: #333;
-  }
-
-  :focus {
-    color: #333;
-  }
-
-  :active {
-    color: #333;
-  }
-`;
-
-export const MainMenu = styled(Button)`
-  color: #DD718C;
-  font-size: 21px;
-  font-weight: Bold;
-
-  :hover {
-    color: #FB6E91;
-  }
-
-  :focus {
-    color: #FB6E91;
-  }
-
-  :active {
-    color: #FB6E91;
-  }
-`;
+export const ContentsListStyle00 = styled(List)`
+	a {
+		color: #707070;
+		font-size: 12px;
+		:hover {
+			color: #333;
+		}
+		:focus {
+			color: #333;
+		}
+		:active {
+			color: #333;
+		}
+	}
+	.ant-list-item {
+		padding: 8px 0;
+	}
+	.extra {
+		font-size: 10px;
+		font-color: #707070;
+	}
+	
+`
+export const ContentsLoginImage = styled.img`
+	height: 150px;
+	display: block;
+	margin: 0 auto;
+`

@@ -1,11 +1,8 @@
 import React from 'react';
-import {Row, Col, Carousel, List } from 'antd';
+import {Col, List } from 'antd';
 import {useSelector} from 'react-redux';
-import {ContentsWrapper, ContentsImageBanner, ContentsCardStyle00, ContentsListStyle00, ContentsLoginImage} from './MainPageContentsCSS';
+import {ContentsWrapper, ContentsCardStyle00, ContentsListStyle00} from './MainPageContentsCSS';
 import Link from "next/link";
-import Element00_Banner from "./Element00_Banner";
-import Element01_Notice from "./Element01_Notice";
-import Element02_Login from "./Element02_Login";
 
 const dummyPostNotice = [
 	{
@@ -50,19 +47,26 @@ const dummyPostNotice = [
 	},
 ];
 
-const MainPageContents = () => {
-	const {isLoggedIn} = useSelector(state => state.user);
-	const {mainPosts} = useSelector(state => state.post);
-
+const Element01_Notice = () => {
 	return (
-		<>
-			<Row style={{marginBottom: 50}} gutter={10}>
-				<Element00_Banner/>
-				<Element01_Notice/>
-				<Element02_Login/>
-			</Row>
-		</>
+		<Col span={6}>
+			<ContentsWrapper>
+				<ContentsCardStyle00 title="새소식" extra={<a href="#">더보기</a>}>
+					<ContentsListStyle00
+						dataSource={dummyPostNotice}
+						renderItem={item => (
+							<List.Item
+								extra={
+									<div className={'extra'}>{item.date}</div>
+								}>
+								<Link href={item.link}><a>{item.content}</a></Link>
+							</List.Item>
+						)}
+					/>
+				</ContentsCardStyle00>
+			</ContentsWrapper>
+		</Col>
 	);
 };
 
-export default MainPageContents;
+export default Element01_Notice;
