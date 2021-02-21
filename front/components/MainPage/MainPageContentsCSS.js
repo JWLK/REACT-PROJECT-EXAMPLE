@@ -3,21 +3,20 @@ import {Col, Card, Button, List} from 'antd';
 
 
 export const ContentsWrapper = styled.div`
-	overflow: hidden;
-  height: 200px;
+  overflow: hidden;
   //background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 `;
 
 export const ContentsImageBanner = styled.img`
-	height: 200px;
-	display: block;
-	margin-left: -25px;
+  height: 200px;
+  display: block;
+  margin-left: -25px;
 `
 
 export const ContentsCardStyle00 = styled(Card)`
   width: 100%;
-  height: inherit;
+  height: 200px;
 
   .ant-card-head {
     min-height: 0px;
@@ -33,7 +32,7 @@ export const ContentsCardStyle00 = styled(Card)`
 
   .ant-card-extra {
     a {
-      margin-left : 10px;
+      margin-left: 10px;
       color: rgba(255, 255, 255, 0.8);
     }
 
@@ -47,30 +46,35 @@ export const ContentsCardStyle00 = styled(Card)`
 `;
 
 export const ContentsListStyle00 = styled(List)`
-	a {
-		color: #707070;
-		font-size: 12px;
-		:hover {
-			color: #333;
-		}
-		:focus {
-			color: #333;
-		}
-		:active {
-			color: #333;
-		}
-	}
-	.ant-list-item {
-		padding: 8px 0;
-	}
-	.extra {
-		font-size: 10px;
-		font-color: #707070;
-	}
-	
+  a {
+    color: #707070;
+    font-size: 12px;
+
+    :hover {
+      color: #333;
+    }
+
+    :focus {
+      color: #333;
+    }
+
+    :active {
+      color: #333;
+    }
+  }
+
+  .ant-list-item {
+    padding: 8px 0;
+  }
+
+  .extra {
+    font-size: 10px;
+    font-color: #707070;
+  }
+
 `
 export const ContentsLoginImage = styled.img`
-	height: 150px;
-	display: block;
-	margin: 0 auto;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
 `
