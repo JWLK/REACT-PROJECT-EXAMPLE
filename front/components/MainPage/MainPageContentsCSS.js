@@ -78,3 +78,82 @@ export const ContentsLoginImage = styled.img`
   display: block;
   margin: 0 auto;
 `
+
+export const ContentsCardStyle01 = styled(Card)`
+  width: 100%;
+  height: 148px;
+
+  .ant-card-head {
+    min-height: 0px;
+    padding: 0px 10px;
+    color: #DD7171;
+    font-size: 14px;
+    background-color: #fff;
+    border-bottom: 1px solid #DD7171;
+  }
+
+  .ant-card-head-title {
+    padding: 5px 0;
+  }
+
+  .ant-card-extra {
+    a {
+      margin-left: 10px;
+      color: #333;
+    }
+
+    font-size: 10px;
+    padding: 10px 0;
+  }
+
+  .ant-card-body {
+    padding: 5px 10px;
+  }
+`;
+
+export const ContentsListStyle01 = styled(List)`
+  a {
+    color: #707070;
+    font-size: 12px;
+
+    :hover {
+      color: #333;
+    }
+
+    :focus {
+      color: #333;
+    }
+
+    :active {
+      color: #333;
+    }
+  }
+
+  .ant-list-item {
+    padding: 8px 0;
+  }
+
+  .extra {
+    font-size: 10px;
+    font-color: #707070;
+  }
+` ;
+
+
+export const ContentsServiceImage = styled.img`
+  height: 148px;
+  display: block;
+  margin: 0 auto;
+  margin-left: -10px;
+`
+
+export const ContentsQuickButtonImage = styled.img`
+  height: 65px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  transform:scale(1.8);             /*  default */
+  -webkit-transform:scale(1.8);  /*  크롬 */
+  -moz-transform:scale(1.8);     /* FireFox */
+  -o-transform:scale(1.8);        /* Opera */
+`

@@ -3,15 +3,105 @@ export const initialState = {
     id: 1,
     User: {
       id: 1,
-      nickname: '제로초',
+      nickname: '00성형외과',
     },
-    content: '첫 번째 게시글',
+    content: '수술실 간호사 및 간호조무사 채용',
     Images: [{
-      src: 'https://bookthumb-phinf.pstatic.net/cover/137/995/13799585.jpg?udate=20180726',
+      src: 'https://www.e-dream.co.kr/m/img/sub/intro_mb01_0107.jpg',
     }, {
-      src: 'https://gimg.gilbut.co.kr/book/BN001958/rn_view_BN001958.jpg',
+      src: 'http://www.e-dream.co.kr/mpboard/upload/1545376320.jpg.save',
+    }],
+    Comments: [{
+      User: {
+        nickname: 'nero',
+      },
+      content: '우와 개정판이 나왔군요~',
     }, {
-      src: 'https://gimg.gilbut.co.kr/book/BN001998/rn_view_BN001998.jpg',
+      User: {
+        nickname: 'hero',
+      },
+      content: '얼른 사고싶어요~',
+    }]
+  },{
+    id: 2,
+    User: {
+      id: 1,
+      nickname: '00성형외과',
+    },
+    content: '수술실 간호사 및 간호조무사 채용',
+    Images: [{
+      src: 'https://www.e-dream.co.kr/m/img/sub/intro_mb01_0107.jpg',
+    }, {
+      src: 'http://www.e-dream.co.kr/mpboard/upload/1545376320.jpg.save',
+    }],
+    Comments: [{
+      User: {
+        nickname: 'nero',
+      },
+      content: '우와 개정판이 나왔군요~',
+    }, {
+      User: {
+        nickname: 'hero',
+      },
+      content: '얼른 사고싶어요~',
+    }]
+  },{
+    id: 3,
+    User: {
+      id: 1,
+      nickname: '00성형외과',
+    },
+    content: '수술실 간호사 및 간호조무사 채용',
+    Images: [{
+      src: 'https://www.e-dream.co.kr/m/img/sub/intro_mb01_0107.jpg',
+    }, {
+      src: 'http://www.e-dream.co.kr/mpboard/upload/1545376320.jpg.save',
+    }],
+    Comments: [{
+      User: {
+        nickname: 'nero',
+      },
+      content: '우와 개정판이 나왔군요~',
+    }, {
+      User: {
+        nickname: 'hero',
+      },
+      content: '얼른 사고싶어요~',
+    }]
+  },{
+    id: 4,
+    User: {
+      id: 1,
+      nickname: '00성형외과',
+    },
+    content: '수술실 간호사 및 간호조무사 채용',
+    Images: [{
+      src: 'https://www.e-dream.co.kr/m/img/sub/intro_mb01_0107.jpg',
+    }, {
+      src: 'http://www.e-dream.co.kr/mpboard/upload/1545376320.jpg.save',
+    }],
+    Comments: [{
+      User: {
+        nickname: 'nero',
+      },
+      content: '우와 개정판이 나왔군요~',
+    }, {
+      User: {
+        nickname: 'hero',
+      },
+      content: '얼른 사고싶어요~',
+    }]
+  },{
+    id: 5,
+    User: {
+      id: 1,
+      nickname: '00성형외과',
+    },
+    content: '수술실 간호사 및 간호조무사 채용',
+    Images: [{
+      src: 'https://www.e-dream.co.kr/m/img/sub/intro_mb01_0107.jpg',
+    }, {
+      src: 'http://www.e-dream.co.kr/mpboard/upload/1545376320.jpg.save',
     }],
     Comments: [{
       User: {

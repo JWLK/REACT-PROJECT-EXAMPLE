@@ -12,6 +12,12 @@ import Link from "next/link";
 import Element00_Banner from "./Element00_Banner";
 import Element01_Notice from "./Element01_Notice";
 import Element02_Login from "./Element02_Login";
+import Element03_ServiceMenu from "./Element03_ServiceMenu";
+import Element04_HireInfo from "./Element04_HireInfo";
+import Element04_UserInfo from "./Element04_UserInfo";
+import Element04_PremiumService from "./Element04_PremiumService";
+import Element04_QuickButton from "./Element04_QuickButton";
+import Element05_HirePostTitle from "./Element05_HirePostTitle";
 
 const dummyPostNotice = [
 	{
@@ -67,34 +73,14 @@ const MainPageContents = () => {
 				<Element01_Notice/>
 				<Element02_Login/>
 			</Row>
-			<ContentsWrapper style={{marginBottom: 50, background: '#fff' }}>
-				<Row gutter={10}>
-					<Col span={11} style={{height: 150}}>
-						<div style={{margin: '40px 70px'}}>
-							<img src='/assets/Hire-Info-Text-obj.svg'/>
-						</div>
-					</Col>
-					<Col span={13} style={{height: 150}}>
-						<Row>
-							<Col span={4} style={{margin: 10}}>
-								<Link href="#"><a><img src='/assets/ic_nurse.svg'/></a></Link>
-							</Col>
-							<Col span={4} style={{margin: 10}}>
-								<Link href="#"><a><img src='/assets/ic_skinmanager.svg'/></a></Link>
-							</Col>
-							<Col span={4} style={{margin: 10}}>
-								<Link href="#"><a><img src='/assets/ic_communicator.svg'/></a></Link>
-							</Col>
-							<Col span={4} style={{margin: 10}}>
-								<Link href="#"><a><img src='/assets/ic_maketer.svg'/></a></Link>
-							</Col>
-							<Col span={4} style={{margin: 10}}>
-								<Link href="#"><a><img src='/assets/ic_etc.svg'/></a></Link>
-							</Col>
-						</Row>
-					</Col>
-				</Row>
-			</ContentsWrapper>
+			<Element03_ServiceMenu/>
+			<Row style={{marginBottom: 20}} gutter={10}>
+				<Element04_HireInfo/>
+				<Element04_UserInfo/>
+				<Element04_PremiumService/>
+				<Element04_QuickButton/>
+			</Row>
+			<Element05_HirePostTitle/>
 		</>
 	);
 };
